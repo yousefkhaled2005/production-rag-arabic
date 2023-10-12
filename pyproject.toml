@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "production-rag-arabic"
+version = "1.0.0"
+description = "Enterprise-Grade Production RAG for Arabic Legal and Document Intelligence"
+readme = "README.md"
+authors = [{ name = "Yousef Khaled", email = "youssef460249@beng.bu.edu.eg" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "qdrant-client>=1.7.0",
+    "sentence-transformers>=2.2.2",
+    "rank-bm25>=0.2.2",
+    "numpy>=1.24.0"
+]
